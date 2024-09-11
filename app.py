@@ -6,8 +6,8 @@ from sklearn import preprocessing
 
 ##@st.cache_resource(allow_output_mutation=True)
 def load_model():
-    model_path = 'best_model_Gradient_Boost.joblib'
-    #model_path = 'best_model.joblib'
+    #model_path = 'best_model_Gradient_Boost.joblib'
+    model_path = 'best_model.joblib'
     try:
         model = joblib.load(model_path)
         return model
